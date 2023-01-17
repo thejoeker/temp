@@ -1,0 +1,21 @@
+#include <stddef.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
+
+#include <stdio.h>
+
+int main()
+{
+	char  c = 'a';
+	int d = 10;	
+	
+		ft_putchar_fd(c);
+	
+}
+
